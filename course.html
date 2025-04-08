@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>proyecto - Segunda entrega Fron-End PoliCursos</title>
+  <link rel="shortcut icon" type="image/png" href="https://via.placeholder.com/16x16" >
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:500,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css" />
+  <script src="js/complement.js" defer></script>
+  <script src="js/uikit.js"></script>
+</head>
+
+<body>
+ 
+  <header
+	class="uk-background-cover uk-background-norepeat uk-background-center-center uk-background-blend-soft-light 
+		uk-background-primary" >
+  style="background-image: url(img/UXDesign.jpg);">
+	<div data-uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; 
+	  cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; top: 500">
+	  <nav class="uk-navbar-container uk-letter-spacing-small uk-text-bold">
+	    <div class="uk-container uk-container-large">
+	      <div class="uk-position-z-index" data-uk-navbar>
+	        <div class="uk-navbar-left">
+	          <a class="uk-navbar-item uk-logo" href="index.html">PoliCursos</a>
+	        </div>
+	        <div class="uk-navbar-center">
+	          <ul class="uk-navbar-nav uk-visible@m">
+	            <li ><a href="index.html">Inicio</a></li>
+	            <li ><a href="courses.html">Cursos</a></li>
+	            <li ><a href="search.html">Buscar</a></li>
+	            <li >
+	              <a href="#">Páginas</a>
+	              <div class="uk-navbar-dropdown">
+	                <ul class="uk-nav uk-navbar-dropdown-nav">
+	                  <li class="uk-active"><a href="course.html">Curso Individual</a></li>
+	                  <li ><a href="search.html">Buscar</a></li>
+	                  <li ><a href="sign-in.html">Iniciar Sesión</a></li>
+	                  <li ><a href="sign-up.html">Registrarse</a></li>
+	                </ul>
+	              </div>            
+	            </li>
+	          </ul>
+	        </div>
+	        <div class="uk-navbar-right">
+	          <div>
+	            <a class="uk-navbar-toggle" data-uk-search-icon href="#"></a>
+	            <div class="uk-drop" data-uk-drop="mode: click; pos: left-center; offset: 0">
+	              <form class="uk-search uk-search-navbar uk-width-1-1">
+	                <input class="uk-search-input uk-text-demi-bold" type="search" placeholder="Buscar..." autofocus>
+	              </form>
+	            </div>
+	          </div>
+	          <div class="uk-navbar-item">
+	            <div><a class="uk-button uk-button-success-outline" href="sign-up.html">Registrarse</a></div>
+	          </div>          
+	          <a class="uk-navbar-toggle uk-hidden@m" href="#offcanvas" data-uk-toggle><span
+	            data-uk-navbar-toggle-icon></span></a>
+	        </div>
+	      </div>
+	    </div>
+	  </nav>
+	</div>
+	<div class="uk-container uk-container-large uk-light" data-uk-height-viewport="offset-top: true">
+		<div data-uk-grid data-uk-height-viewport="offset-top: true">
+			<div class="uk-header-left uk-section uk-visible@m uk-flex uk-flex-bottom">
+				<div class="uk-text-xsmall uk-text-bold">
+					<a class="hvr-back" href="#course" data-uk-scroll="offset: 80"><span class="uk-margin-small-right" 
+						data-uk-icon="arrow-left"></span>Desplázate hacia abajo</a>
+				</div>
+			</div>
+			<div class="uk-width-expand@m uk-section">
+				<div class="uk-margin-top">          
+          <div class="uk-grid-large" data-uk-grid 
+						data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 200; repeat: true">
+						<div class="uk-width-1-2@m">
+              <h1 class="uk-heading-medium uk-margin-remove-top uk-letter-spacing-xl">Fundamentos de Diseño UX</h1>
+              <a href="sign-up.html" class="uk-button uk-button-large uk-button-success-outline">Únete ahora</a>
+						</div>
+						<div class="uk-width-1-2@m uk-text-large uk-flex uk-flex-middle">
+              <div>
+                <p>Combina completamente la preparación web interactiva mediante estrategias de crecimiento de misión crítica. Mantén sin problemas comunidades granulares a través de nichos multiplataforma.</p>
+                <p>Libera holísticamente a los usuarios finales después de canales de alto impacto a largo plazo. Sintetiza globalmente el ancho de banda proactivo con contenido interactivo.</p>
+              </div>
+						</div>
+					</div>
+				</div>
+				<div class="uk-margin-xlarge-top">
+          <div class="uk-course-pricing" 
+            data-uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 400; repeat: true">
+            <div class="uk-grid-large uk-grid-match" data-uk-grid>
+              <div class="uk-width-1-5@l">
+                <h3>Elige opciones de <mark>precios</mark></h3>
+              </div>
+              <div class="uk-width-expand@s">
+                <div class="uk-card uk-border-secondary-xlarge uk-card-body uk-flex uk-flex-column">
+                  <h3 class="uk-h2 uk-text-success uk-margin-remove">$19.999
+                    <del class="uk-margin-small-left uk-text-small uk-text-muted">$39.999</del>
+                  </h3>
+                  <ul class="uk-list uk-list-bullet uk-text-small uk-text-demi-bold uk-margin-auto-bottom">
+                    <li>Formula ideas profesionales alternativas y de gran calidad</li>
+                    <li>La preparación y la calidad evolucionan las ideas base instaladas</li>
+                  </ul>
+                  <a href="sign-up.html" class="uk-button uk-button-large uk-button-success uk-width-1-1 uk-margin-auto-top">Regístrate ahora</a>
+                </div>
+              </div>
+              <div class="uk-width-expand@s">
+                <div class="uk-card uk-border-secondary-xlarge uk-card-body">
+                  <h3 class="uk-h2 uk-text-success uk-margin-remove">$49.99
+                    <del class="uk-margin-small-left uk-text-small uk-text-muted">$99.99</del>
+                  </h3>
+                  <ul class="uk-list uk-list-bullet uk-text-small uk-text-demi-bold">
+                    <li>Preparación y evolución de ideas de calidad de cohetes espaciales instalados.</li>
+                    <li>Evoluciona ideas de calidad de base instalada frente a procesos de negocio</li>
+                    <li>Incuba alternativamente productos de calidad</li>
+                  </ul>
+                  <a href="sign-up.html" class="uk-button uk-button-large uk-button-success uk-width-1-1 uk-margin-large-top">Regístrate ahora</a>
+                </div>
+              </div>
+            </div>
+          </div>
+				</div>
+			</div>
+			<div class="uk-header-right uk-section uk-visible@m uk-flex uk-flex-right uk-flex-bottom">
+				<div>
+					<ul class="uk-subnav uk-text-xsmall uk-text-bold">
+						<li><a class="uk-link-border" href="#" target="_blank">facebook</a></li>
+						<li><a class="uk-link-border" href="#" target="_blank">twitter</a></li>
+						<li><a class="uk-link-border" href="#" target="_blank">instagram</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<div id="course" class="uk-section">
+  <div class="uk-container uk-margin-pricing-offset">
+    <div class="uk-grid-large" data-uk-grid>
+      <div class="uk-width-expand@m">
+        <div class="uk-article">
+          <h2>Descripción</h2>
+          <p>Este curso de UX está diseñado para introducir a los estudiantes en los principios fundamentales del diseño centrado en el usuario. A lo largo del curso, los participantes aprenderán a comprender las necesidades y comportamientos de los usuarios, aplicando metodologías de investigación, diseño y evaluación que permiten crear productos digitales intuitivos, accesibles y eficientes.</p>
+          <p>Se abordarán temas clave como la arquitectura de información, el diseño de interfaces, la creación de prototipos y la realización de pruebas de usabilidad. Además, se enseñará a trabajar con herramientas populares del sector y a aplicar buenas prácticas en cada etapa del proceso de diseño.</p>
+
+          <h2 class="uk-margin-large-top">Contenido</h2>
+          <ul class="uk-margin-top" data-uk-accordion="multiple: true">
+            <li class="uk-open">
+              <a class="uk-accordion-title" href="#">¿Qué es el Diseño de Experiencia de Usuario?<span class="uk-align-right uk-margin-remove-bottom">28:56</span></a>
+              <div class="uk-accordion-content">
+                <table class="uk-table uk-table-justify uk-table-middle uk-table-divider">
+                  <tbody>
+                    <tr class="uk-text-primary">
+                      <td class="uk-table-expand"><span class="uk-margin-small-right" data-uk-icon="play-circle"></span><a href="#lesson" data-uk-toggle>Introducción: una parábola de UXD</a></td>
+                      <td><span data-uk-icon="unlock"></span></td>
+                      <td class="uk-table-shrink">04:24</td>
+                    </tr>
+                    <tr class="uk-text-primary">
+                      <td><span class="uk-margin-small-right" data-uk-icon="play-circle"></span><a href="#lesson" data-uk-toggle>Lo que UXD no es</a></td>
+                      <td><span data-uk-icon="unlock"></span></td>
+                      <td>04:24</td>
+                    </tr>
+                    <tr class="uk-text-muted">
+                      <td><span class="uk-margin-small-right" data-uk-icon="play-circle"></span>¿Por qué debería importarnos UXD?</td>
+                      <td><span data-uk-icon="lock"></span></td>
+                      <td>04:24</td>
+                    </tr>
+                    <tr class="uk-text-muted">
+                      <td><span class="uk-margin-small-right" data-uk-icon="play-circle"></span>Los elementos de la Experiencia de Usuario</td>
+                      <td><span data-uk-icon="lock"></span></td>
+                      <td>04:24</td>
+                    </tr>                    
+                  </tbody>
+                </table>
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title" href="#">Entendiendo los elementos de la Experiencia de Usuario<span class="uk-align-right uk-margin-remove-bottom">19:26</span></a>
+              <div class="uk-accordion-content">
+                <table class="uk-table uk-table-justify uk-table-middle uk-table-divider">
+                  <tbody>
+                    <tr class="uk-text-muted">
+                      <td class="uk-table-expand"><span class="uk-margin-small-right" data-uk-icon="play-circle"></span>Los elementos de la Experiencia de Usuario</td>
+                      <td><span data-uk-icon="lock"></span></td>
+                      <td class="uk-table-shrink">04:24</td>
+                    </tr>
+                    <tr class="uk-text-muted">
+                      <td><span class="uk-margin-small-right" data-uk-icon="play-circle"></span>Explorando los elementos de la Experiencia de Usuario</td>
+                      <td><span data-uk-icon="lock"></span></td>
+                      <td>04:24</td>
+                    </tr>
+                    <tr class="uk-text-muted">
+                      <td><span class="uk-margin-small-right" data-uk-icon="play-circle"></span>Cómo funcionan juntos los elementos</td>
+                      <td><span data-uk-icon="lock"></span></td>
+                      <td>04:24</td>
+                    </tr>
+                    <tr class="uk-text-muted">
+                      <td><span class="uk-margin-small-right" data-uk-icon="play-circle"></span>Identificando objetivos de negocio</td>
+                      <td><span data-uk-icon="lock"></span></td>
+                      <td>04:24</td>
+                    </tr>                    
+                  </tbody>
+                </table>
+              </div>
+            </li>
+            <li>
+              <a class="uk-accordion-title" href="#">Usando la estructura de elementos de diseño<span class="uk-align-right uk-margin-remove-bottom">35:30</span></a>
+              <div class="uk-accordion-content">
+                <table class="uk-table uk-table-justify uk-table-middle uk-table-divider">
+                  <tbody>
+                    <tr class="uk-text-muted">
+                      <td class="uk-table-expand"><span class="uk-margin-small-right" data-uk-icon="play-circle"></span>Generando requisitos efectivos</td>
+                      <td><span data-uk-icon="lock"></span></td>
+                      <td class="uk-table-shrink">04:24</td>
+                    </tr>
+                    <tr class="uk-text-muted">
+                      <td><span class="uk-margin-small-right" data-uk-icon="play-circle"></span>Explorando la arquitectura de información</td>
+                      <td><span data-uk-icon="lock"></span></td>
+                      <td>04:24</td>
+                    </tr>
+                    <tr class="uk-text-muted">
+                      <td><span class="uk-margin-small-right" data-uk-icon="play-circle"></span>Convención y metáfora</td>
+                      <td><span data-uk-icon="lock"></span></td>
+                      <td>04:24</td>
+                    </tr>
+                    <tr class="uk-text-muted">
+                      <td><span class="uk-margin-small-right" data-uk-icon="play-circle"></span>Contraste y uniformidad</td>
+                      <td><span data-uk-icon="lock"></span></td>
+                      <td>04:24</td>
+                    </tr>                    
+                  </tbody>
+                </table>
+              </div>
+            </li>
+          </ul>
+
+          <h2 class="uk-margin-large-top">Requisitos</h2>
+          <ul>
+            <li>Conocimientos básicos de informática: manejo de herramientas digitales, navegación web y uso general de computadoras.</li>
+            <li>Interés en el diseño o en la creación de productos digitales centrados en el usuario.</li>
+            <li>Conocimientos básicos en diseño gráfico (no obligatorio, pero deseable).</li>
+            <li>Capacidad de análisis y observación, orientada a entender comportamientos y necesidades de usuarios.</li>
+            <li>Conexión a internet y un computador personal, para el desarrollo de las actividades prácticas.</li>
+            <li>Disposición para trabajar en equipo y recibir retroalimentación, ya que el diseño UX es un proceso colaborativo.</li>
+          </ul>
+          <div class="uk-margin-large-top uk-background-muted uk-padding">
+            <h2>Tom Solender</h2>
+            <div class="uk-margin-medium-bottom" data-uk-grid>
+              <div class="uk-width-auto uk-flex uk-flex-middle">
+                <img class="uk-border-circle" src="img/104.jpg" alt="Tom Solender">
+              </div>
+              <div class="uk-width-expand uk-text-small">
+                <div data-uk-grid data-uk-margin>
+                  <div class="uk-width-1-1">
+                    <p>Veterano de UX + Diseño con 29 años; Consultor, Autor y Conferenciante</p>
+                  </div>
+                  <div class="uk-width-1-2">
+                    <span class="uk-margin-small-right" data-uk-icon="star"></span>4.4 Calificación del instructor
+                  </div>
+                  <div class="uk-width-1-2">
+                    <span class="uk-margin-small-right" data-uk-icon="comments"></span>21,201 Reseñas
+                  </div>
+                  <div class="uk-width-1-2">
+                    <span class="uk-margin-small-right" data-uk-icon="users"></span>130,451 Estudiantes
+                  </div>
+                  <div class="uk-width-1-2">
+                    <span class="uk-margin-small-right" data-uk-icon="file-text"></span>5 Cursos
+                  </div>
+                </div>
+              </div>              
+            </div>
+            <p class="uk-text-small uk-margin-remove">
+              El tutor del curso cuenta con más de 8 años de experiencia en el campo del diseño de experiencia de usuario (UX) y la interfaz de usuario (UI). Ha trabajado con empresas nacionales e internacionales liderando proyectos de transformación digital, creación de productos centrados en el usuario y optimización de experiencias digitales.
+            </p>
+            <p>
+              Es diseñador certificado en metodologías como Design Thinking, UX Research y Prototipado Ágil, y ha impartido talleres y conferencias sobre usabilidad, accesibilidad y diseño centrado en el ser humano en múltiples universidades y eventos del sector tecnológico.
+            </p>
+            <p>
+              Actualmente se desempeña como UX Lead en una reconocida empresa tecnológica, donde dirige equipos multidisciplinarios enfocados en construir soluciones innovadoras, funcionales y alineadas con las necesidades reales de los usuarios.
+            </p>         
+          </div>  
+
+          <h2 class="uk-margin-large-top">¿Qué <mark>piensan los estudiantes</mark> sobre el curso?</h2>
+          <div class="uk-border-secondary-xlarge uk-grid-collapse" data-uk-grid>
+            <div class="uk-width-1-3@s uk-padding">
+              <h5 class="uk-margin-remove">Calificación promedio: <mark>4.75</mark></h5>
+              <p class="uk-text-small uk-margin-small">De 1534 reseñas</p>
+              <div class="uk-rating">
+                <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: 1.1"></span>
+                <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: 1.1"></span>
+                <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: 1.1"></span>
+                <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: 1.1"></span>
+                <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: 1.1"></span>
+              </div>
+            </div>
+            <div class="uk-width-expand@s uk-padding">
+              <div class="uk-grid-small" data-uk-grid>
+                <div class="uk-width-expand">
+                  <div class="uk-rating uk-flex uk-flex-middle">
+                    <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: .8"></span>
+                    <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: .8"></span>
+                    <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: .8"></span>
+                    <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: .8"></span>
+                    <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: .8"></span>
+                  </div>
+                </div>
+                <div class="uk-width-auto"><h6>68%</h6></div>
+              </div>
+              <progress class="uk-progress uk-width-1-1" value="68" max="100"></progress>
+              <div class="uk-grid-small" data-uk-grid>
+                <div class="uk-width-expand">
+                  <div class="uk-rating uk-flex uk-flex-middle">
+                    <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: .8"></span>
+                    <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: .8"></span>
+                    <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: .8"></span>
+                    <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: .8"></span>
+                    <span data-uk-icon="icon: star; ratio: .8"></span>
+                  </div>
+                </div>
+                <div class="uk-width-auto"><h6>11%</h6></div>
+              </div>
+              <progress class="uk-progress uk-width-1-1" value="11" max="100"></progress>
+              <div class="uk-grid-small" data-uk-grid>
+                <div class="uk-width-expand">
+                  <div class="uk-rating uk-flex uk-flex-middle">
+                    <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: .8"></span>
+                    <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: .8"></span>
+                    <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: .8"></span>
+                    <span data-uk-icon="icon: star; ratio: .8"></span>
+                    <span data-uk-icon="icon: star; ratio: .8"></span>
+                  </div>
+                </div>
+                <div class="uk-width-auto"><h6>12%</h6></div>
+              </div>
+              <progress class="uk-progress uk-width-1-1" value="12" max="100"></progress>
+            </div>
+            <div class="uk-width-expand@s uk-padding">
+              <div class="uk-grid-small" data-uk-grid>
+                <div class="uk-width-expand">
+                  <div class="uk-rating uk-flex uk-flex-middle">
+                    <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: .8"></span>
+                    <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: .8"></span>
+                    <span data-uk-icon="icon: star; ratio: .8"></span>
+                    <span data-uk-icon="icon: star; ratio: .8"></span>
+                    <span data-uk-icon="icon: star; ratio: .8"></span>
+                  </div>
+                </div>
+                <div class="uk-width-auto"><h6>6%</h6></div>
+              </div>
+              <progress class="uk-progress uk-width-1-1" value="6" max="100"></progress>
+              <div class="uk-grid-small" data-uk-grid>
+                <div class="uk-width-expand">
+                  <div class="uk-rating uk-flex uk-flex-middle">
+                    <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: .8"></span>
+                    <span data-uk-icon="icon: star; ratio: .8"></span>
+                    <span data-uk-icon="icon: star; ratio: .8"></span>
+                    <span data-uk-icon="icon: star; ratio: .8"></span>
+                    <span data-uk-icon="icon: star; ratio: .8"></span>
+                  </div>
+                </div>
+                <div class="uk-width-auto"><h6>1%</h6></div>
+              </div>
+              <progress class="uk-progress uk-width-1-1" value="2" max="100"></progress>
+            </div>
+          </div>
+          <h3 class="uk-margin-large-top">Reseñas de estudiantes</h3>
+          <ul class="uk-comment-list uk-margin-medium-top">
+            <li>
+              <article class="uk-comment uk-visible-toggle" tabindex="-1">
+                <header class="uk-comment-header uk-position-relative">
+                  <div class="uk-grid-medium uk-flex-middle" data-uk-grid>
+                    <div class="uk-width-auto">
+                      <img class="uk-comment-avatar uk-border-circle" src="img/128.jpg" width="80" height="80" alt="Alice Thomson">
+                    </div>
+                    <div class="uk-width-expand">
+                      <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">Alice Jenkins</a></h4>
+                      <p class="uk-comment-meta uk-margin-remove"><a class="uk-link-reset" href="#">hace 12 días</a></p>
+                      <div class="uk-rating">
+                        <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: 0.8"></span>
+                        <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: 0.8"></span>
+                        <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: 0.8"></span>
+                        <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: 0.8"></span>
+                        <span data-uk-icon="icon: star; ratio: 0.8"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uk-position-top-right uk-position-small uk-hidden-hover"><a class="uk-link-muted" href="#">Responder</a>
+                  </div>
+                </header>
+                <div class="uk-comment-body">
+                  <p>
+                    “Este curso superó mis expectativas. No solo aprendí los principios fundamentales del UX, sino que también adquirí habilidades prácticas que ya estoy aplicando en mi trabajo. El tutor fue muy claro, y las actividades me ayudaron a entender cómo pensar como un diseñador centrado en el usuario.”
+                  </p>
+                </div>
+              </article>
+              <ul>
+                <li>
+                  <article class="uk-comment uk-comment-primary uk-visible-toggle" tabindex="-1">
+                    <header class="uk-comment-header uk-position-relative">
+                      <div class="uk-grid-medium uk-flex-middle" data-uk-grid>
+                        <div class="uk-width-auto">
+                          <img class="uk-comment-avatar uk-border-circle" src="img/112.jpg" width="80" height="80" alt="Tom Solender">
+                        </div>
+                        <div class="uk-width-expand">
+                          <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">Tom Solender</a></h4>
+                          <p class="uk-comment-meta uk-margin-remove-top"><a class="uk-link-reset" href="#">hace 12 días</a></p>
+                        </div>
+                      </div>
+                      <div class="uk-position-top-right uk-position-small uk-hidden-hover"><a class="uk-link-muted"
+                          href="#">Responder</a></div>
+                    </header>
+                    <div class="uk-comment-body">
+                      <p>
+                        “Gracias a este curso logré hacer mi primer prototipo funcional. Me gustó mucho la forma en que se explican los temas, paso a paso, y cómo se conecta la teoría con ejercicios reales. Ideal para quienes venimos de otros campos y queremos entrar al mundo del diseño digital.”
+                      </p>
+                    </div>
+                  </article>
+                </li>
+                <li>
+                  <article class="uk-comment uk-visible-toggle" tabindex="-1">
+                    <header class="uk-comment-header uk-position-relative">
+                      <div class="uk-grid-medium uk-flex-middle" data-uk-grid>
+                        <div class="uk-width-auto">
+                          <img class="uk-comment-avatar uk-border-circle" src="img/113.jpg" width="80" height="80" alt="Alice Thomson">
+                        </div>
+                        <div class="uk-width-expand">
+                          <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">John Thomson</a></h4>
+                          <p class="uk-comment-meta uk-margin-remove"><a class="uk-link-reset" href="#">hace 12 días</a></p>
+                          <div class="uk-rating">
+                            <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: 0.8"></span>
+                            <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: 0.8"></span>
+                            <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: 0.8"></span>
+                            <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: 0.8"></span>
+                            <span data-uk-icon="icon: star; ratio: 0.8"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="uk-position-top-right uk-position-small uk-hidden-hover"><a class="uk-link-muted"
+                          href="#">Reply</a></div>
+                    </header>
+                    <div class="uk-comment-body">
+                      <p>
+                        “Lo que más me gustó del curso fue la atención personalizada del tutor y la forma en que se fomentó la participación. Aprendí a realizar pruebas de usabilidad y a identificar verdaderas necesidades de los usuarios. Ahora me siento mucho más segura para aportar en proyectos digitales desde una perspectiva UX.”
+                      </p>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+           
+        </div>
+      </div>
+      <div class="uk-width-1-3@m">
+        <div>
+          <div>
+            <h3>Este curso incluye</h3>
+            <ul class="uk-list uk-margin-small-top">
+              <li><span class="uk-margin-small-right" data-uk-icon="clock"></span>10 horas de video bajo demanda</li>
+              <li><span class="uk-margin-small-right" data-uk-icon="unlock"></span>Acceso completo de por vida</li>
+              <li><span class="uk-margin-small-right" data-uk-icon="tablet"></span>Acceso en dispositivos móviles</li>
+              <li><span class="uk-margin-small-right" data-uk-icon="file-text"></span>Certificado de finalización</li>
+              <li><span class="uk-margin-small-right" data-uk-icon="file-pdf"></span>Descargas de hojas de trabajo</li>
+              <li><span class="uk-margin-small-right" data-uk-icon="question"></span>Preguntas respondidas por el tutor</li>
+              <li><span class="uk-margin-small-right" data-uk-icon="future"></span>Actualizaciones futuras del curso</li>
+            </ul>
+          </div>			
+          <h3 class="uk-margin-large-top">Etiquetas</h3>
+          <div data-uk-margin>
+            <a class="uk-display-inline-block" href="#"><span class="uk-label uk-label-light">UX</span></a>
+            <a class="uk-display-inline-block" href="#"><span class="uk-label uk-label-light">Design</span></a>
+            <a class="uk-display-inline-block" href="#"><span class="uk-label uk-label-light">UI</span></a>
+            <a class="uk-display-inline-block" href="#"><span class="uk-label uk-label-light">Experience</span></a>          
+          </div>
+          <h3 class="uk-margin-large-top">Share Course</h3>
+          <div class="uk-margin">
+            <div data-uk-grid class="uk-child-width-auto uk-grid-small">
+              <div>
+                <a href="#" data-uk-icon="icon: facebook" class="uk-icon-button facebook" target="_blank"></a>
+              </div>
+              <div>
+                <a href="#" data-uk-icon="icon: linkedin" class="uk-icon-button linkedin" target="_blank"></a>
+              </div>
+              <div>
+                <a href="#" data-uk-icon="icon: twitter" class="uk-icon-button twitter" target="_blank"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="lesson" class="uk-flex-top uk-modal-container" data-uk-modal>
+	<div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-background-muted">
+		<button class="uk-modal-close-outside" type="button" data-uk-close></button>
+    <h2 class="uk-modal-title">Introduction: a UXD Parable</h2>
+      <iframe src="https://player.vimeo.com/video/126241629" width="1000" height="562" data-uk-responsive data-uk-video></iframe>
+    <div class="uk-margin-top uk-article">
+      <p></p>
+    </div>    
+  </div>
+</div>
+
+<div class="uk-section uk-section-muted">
+  <div class="uk-container">
+    <h2>Otros Cursos Que Te Pueden Gustar</h2>
+    <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-margin-large-top" data-uk-grid>
+      <div>
+        <div class="uk-card uk-card-small uk-card-border">
+          <div class="uk-card-media-top uk-position-relative uk-light">
+            <img src="https://via.placeholder.com/640x400" alt="Título del Curso">
+            <div class="uk-position-cover uk-overlay-xlight"></div>
+            <div class="uk-position-top-left">
+              <span class="uk-text-bold uk-text-price uk-text-small">$27.00</span>
+            </div>
+            <div class="uk-position-top-right">
+              <a href="#" class="uk-icon-button uk-like uk-position-z-index uk-position-relative" data-uk-icon="heart"></a>
+            </div>            
+          </div>
+          <div class="uk-card-body">
+            <h3 class="uk-card-title uk-margin-small-bottom">Curso de Presentaciones de Negocios</h3>
+            <div class="uk-text-muted uk-text-small">Thomas Haller</div>
+            <div class="uk-text-muted uk-text-small uk-rating uk-margin-small-top">
+              <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: 0.75"></span>
+              <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: 0.75"></span>
+              <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: 0.75"></span>
+              <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: 0.75"></span>
+              <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: 0.75"></span>
+              <span class="uk-margin-small-left uk-text-bold">5.0</span>
+              <span>(324)</span>
+            </div>
+          </div>
+          <a href="course.html" class="uk-position-cover"></a>
+        </div>
+      </div>
+      <div>
+        <div class="uk-card uk-card-small uk-card-border">
+          <div class="uk-card-media-top uk-position-relative uk-light">
+            <img src="https://via.placeholder.com/640x400" alt="Título del Curso">
+            <div class="uk-position-cover uk-overlay-xlight"></div>
+            <div class="uk-position-top-left">
+              <span class="uk-text-bold uk-text-price uk-text-small">$17.00</span>
+            </div>
+            <div class="uk-position-top-right">
+              <a href="#" class="uk-icon-button uk-like uk-position-z-index uk-position-relative" data-uk-icon="heart"></a>
+            </div>            
+          </div>
+          <div class="uk-card-body">
+            <h3 class="uk-card-title uk-margin-small-bottom">Fotografía de Retratos al Aire Libre</h3>
+            <div class="uk-text-muted uk-text-small">Jane Mathews</div>
+            <div class="uk-text-muted uk-text-small uk-rating uk-margin-small-top">
+              <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: 0.75"></span>
+              <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: 0.75"></span>
+              <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: 0.75"></span>
+              <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: 0.75"></span>
+              <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: 0.75"></span>
+              <span class="uk-margin-small-left uk-text-bold">5.0</span>
+              <span>(1624)</span>
+            </div>
+          </div>
+          <a href="course.html" class="uk-position-cover"></a>
+        </div>
+      </div>
+      <div>
+        <div class="uk-card uk-card-small uk-card-border">
+          <div class="uk-card-media-top uk-position-relative uk-light">
+            <img src="https://via.placeholder.com/640x400" alt="Título del Curso">
+            <div class="uk-position-cover uk-overlay-xlight"></div>
+            <div class="uk-position-top-left">
+              <span class="uk-text-bold uk-text-price uk-text-small">$49.00</span>
+            </div>
+            <div class="uk-position-top-right">
+              <a href="#" class="uk-icon-button uk-like uk-position-z-index uk-position-relative" data-uk-icon="heart"></a>
+            </div>            
+          </div>
+          <div class="uk-card-body">
+            <h3 class="uk-card-title uk-margin-small-bottom">Creación de Arte Digital en Tablet</h3>
+            <div class="uk-text-muted uk-text-small">Chris Jenkins</div>
+            <div class="uk-text-muted uk-text-small uk-rating uk-margin-small-top">
+              <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: 0.75"></span>
+              <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: 0.75"></span>
+              <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: 0.75"></span>
+              <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: 0.75"></span>
+              <span data-uk-icon="icon: star; ratio: 0.75"></span>
+              <span class="uk-margin-small-left uk-text-bold">4.0</span>
+              <span>(724)</span>
+            </div>
+          </div>
+          <a href="course.html" class="uk-position-cover"></a>
+        </div>
+      </div>
+      <div>
+        <div class="uk-card uk-card-small uk-card-border">
+          <div class="uk-card-media-top uk-position-relative uk-light">
+            <img src="https://via.placeholder.com/640x400" alt="Título del Curso">
+            <div class="uk-position-cover uk-overlay-xlight"></div>
+            <div class="uk-position-top-left">
+              <span class="uk-text-bold uk-text-price uk-text-small">$36.00</span>
+            </div>
+            <div class="uk-position-top-right">
+              <a href="#" class="uk-icon-button uk-like uk-position-z-index uk-position-relative" data-uk-icon="heart"></a>
+            </div>            
+          </div>
+          <div class="uk-card-body">
+            <h3 class="uk-card-title uk-margin-small-bottom">Fotografía de Retratos Avanzada</h3>
+            <div class="uk-text-muted uk-text-small">Jannet Wilkins</div>
+            <div class="uk-text-muted uk-text-small uk-rating uk-margin-small-top">
+              <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: 0.75"></span>
+              <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: 0.75"></span>
+              <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: 0.75"></span>
+              <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: 0.75"></span>
+              <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: 0.75"></span>
+              <span class="uk-margin-small-left uk-text-bold">5.0</span>
+              <span>(214)</span>
+            </div>
+          </div>
+          <a href="course.html" class="uk-position-cover"></a>
+        </div>
+      </div>
+      <div>
+        <div class="uk-card uk-card-small uk-card-border">
+          <div class="uk-card-media-top uk-position-relative uk-light">
+            <img src="https://via.placeholder.com/640x400" alt="Título del Curso">
+            <div class="uk-position-cover uk-overlay-xlight"></div>
+            <div class="uk-position-top-left">
+              <span class="uk-text-bold uk-text-price uk-text-small">$45.00</span>
+            </div>
+            <div class="uk-position-top-right">
+              <a href="#" class="uk-icon-button uk-like uk-position-z-index uk-position-relative" data-uk-icon="heart"></a>
+            </div>            
+          </div>
+          <div class="uk-card-body">
+            <h3 class="uk-card-title uk-margin-small-bottom">Entorno de Desarrollo React</h3>
+            <div class="uk-text-muted uk-text-small">Ben Allen</div>
+            <div class="uk-text-muted uk-text-small uk-rating uk-margin-small-top">
+              <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: 0.75"></span>
+              <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: 0.75"></span>
+              <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: 0.75"></span>
+              <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: 0.75"></span>
+              <span data-uk-icon="icon: star; ratio: 0.75"></span>
+              <span class="uk-margin-small-left uk-text-bold">4.0</span>
+              <span>(324)</span>
+            </div>
+          </div>
+          <a href="course.html" class="uk-position-cover"></a>
+        </div>
+      </div>
+      <div>
+        <div class="uk-card uk-card-small uk-card-border">
+          <div class="uk-card-media-top uk-position-relative uk-light">
+            <img src="https://via.placeholder.com/640x400" alt="Título del Curso">
+            <div class="uk-position-cover uk-overlay-xlight"></div>
+            <div class="uk-position-top-left">
+              <span class="uk-text-bold uk-text-price uk-text-small">$27.00</span>
+            </div>
+            <div class="uk-position-top-right">
+              <a href="#" class="uk-icon-button uk-like uk-position-z-index uk-position-relative" data-uk-icon="heart"></a>
+            </div>            
+          </div>
+          <div class="uk-card-body">
+            <h3 class="uk-card-title uk-margin-small-bottom">Diseño UI para Desarrolladores de Productos</h3>
+            <div class="uk-text-muted uk-text-small">Pete Frances</div>
+            <div class="uk-text-muted uk-text-small uk-rating uk-margin-small-top">
+              <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: 0.75"></span>
+              <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: 0.75"></span>
+              <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: 0.75"></span>
+              <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: 0.75"></span>
+              <span class="uk-rating-filled" data-uk-icon="icon: star; ratio: 0.75"></span>
+              <span class="uk-margin-small-left uk-text-bold">4.65</span>
+              <span>(1447)</span>
+            </div>
+          </div>
+          <a href="course.html" class="uk-position-cover"></a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<!-- Footer< -->
+<div id="footer"></div>
+
+<div id="offcanvas" data-uk-offcanvas="flip: true; overlay: true">
+  <div class="uk-offcanvas-bar">
+    <a class="uk-logo" href="index.html">curso</a>
+    <button class="uk-offcanvas-close" type="button" data-uk-close="ratio: 1.2"></button>
+    <ul class="uk-nav uk-nav-primary uk-nav-offcanvas uk-margin-medium-top uk-text-center">
+      <li ><a href="index.html">Inicio</a></li>
+      <li ><a href="courses.html">Cursos</a></li>
+      <li class="uk-active"><a href="course.html">Curso Individual</a></li>
+      <li ><a href="search.html">Buscar</a></li>
+      <li ><a href="sign-in.html">Iniciar Sesión</a></li>
+      <li ><a href="sign-up.html">Registrarse</a></li>
+    </ul>
+    <div class="uk-margin-medium-top">
+      <a class="uk-button uk-width-1-1 uk-button-default" href="sign-up.html">Registrarse</a>
+    </div>
+    <div class="uk-margin-medium-top uk-text-center">
+      <div data-uk-grid class="uk-child-width-auto uk-grid-small uk-flex-center">
+        <div>
+          <a href="https://twitter.com/" data-uk-icon="icon: twitter" class="uk-icon-link" target="_blank"></a>
+        </div>
+        <div>
+          <a href="https://www.facebook.com/" data-uk-icon="icon: facebook" class="uk-icon-link" target="_blank"></a>
+        </div>
+        <div>
+          <a href="https://www.instagram.com/" data-uk-icon="icon: instagram" class="uk-icon-link" target="_blank"></a>
+        </div>
+        <div>
+          <a href="https://vimeo.com/" data-uk-icon="icon: vimeo" class="uk-icon-link" target="_blank"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>
